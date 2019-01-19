@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size:16px;
+}
+a{
+    text-decoration: none;
+}
+.content_box{
+    margin-top: 40px;
+    padding-top:180px;
+    background: url(../img/bd.jpg) no-repeat 0 -12px;
+    background-size:cover;
+}
+.iconfont.download-icon {
+    font-size: 3.5rem;
+    color: #45a212;
+    /* position: absolute;
+    top: 50%;
+    right: -16px;
+    transform: translate(-50%,-50%); */
+}
+.wrapper{
+    display: grid;
+    padding: 0.4rem 0.8rem;
+    grid-template-columns: 17% 62% 11%;
+    border-bottom: 1px solid #e7e7e7;
+    /* grid-template-rows: 50px; */
+}
+.desc{
+    margin-left:4%;
+    line-height: 1.5;
+}
+.desc>p{
+    margin:0;
+    padding:0;
+    font-size:0.75rem;
+    color:#696969;
+}
+.mint-tab-item-label{
+    font-size:1.2rem;
+}
+.mint-navbar{
+    margin-bottom:1rem;
+}
