@@ -8,9 +8,9 @@ a{
 }
 .content_box{
     margin-top: 40px;
-    padding-top:180px;
-    background: url(../img/bd.jpg) no-repeat 0 -12px;
-    background-size:cover;
+    /* padding-top:180px; */
+    /* background: url(../img/bd.jpg) no-repeat 0 -12px; */
+    /* background-size:cover; */
 }
 .iconfont.download-icon {
     font-size: 3.5rem;
@@ -42,4 +42,23 @@ a{
 }
 .mint-navbar{
     margin-bottom:1rem;
+}
+.mint-swipe-item>img{
+    width:100%;
+}
+.mint-header>h1{
+    font-size:1.4rem;
+}
+.mint-header-button{
+    flex: .8;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+ul,li{
+    list-style: none;
+    padding:0;
+    margin:0;
 }

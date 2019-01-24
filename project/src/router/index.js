@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 
 import Home from '@/components/Home/Home'
-import Download from '@/components/Download/Download'
+import Puke from '@/components/Puke/Puke'
 
 Vue.use(Router)
 
@@ -11,7 +11,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect:'/home'
+      redirect:{name:'home'}
     },
     {
       path: '/home',
@@ -19,9 +19,13 @@ export default new Router({
       component: Home
     },
     {
-      path: '/Download',
-      name: 'download',
-      component: Download
+      path: '/puke',
+      name: 'puke',
+      component: Puke
+    },
+    {
+      path: '*',
+      redirect: {name:'home'}
     }
   ]
 })
