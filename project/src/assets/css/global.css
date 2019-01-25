@@ -7,7 +7,7 @@ a{
     text-decoration: none;
 }
 .content_box{
-    margin-top: 40px;
+    margin-top: 52px;
     /* padding-top:180px; */
     /* background: url(../img/bd.jpg) no-repeat 0 -12px; */
     /* background-size:cover; */
@@ -61,4 +61,26 @@ ul,li{
     list-style: none;
     padding:0;
     margin:0;
+}
+header.mint-header{
+    max-width: 786px;
+    margin: 0 auto;
+    height: 52px;
+}
+div.mint-navbar .mint-tab-item{
+    padding:0;
+}
+.mint-tab-item-label>div{
+    padding:17px 0;
+}
+.mint-tab-item{
+    color: #aaa;
+    font-size: 1.5rem;
+    background: #272727;
+}
+.mint-tab-item.is-selected{
+    color: #fff !important;
+    margin-bottom:0 !important;
+    border-bottom:none !important;
+    background: #19803e;
 }

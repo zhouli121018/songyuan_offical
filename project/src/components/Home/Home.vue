@@ -56,6 +56,7 @@ export default {
 <style scoped>
 .navBox{
     margin-bottom:12px;
+    font-size:12px;
 }
 .clear:after{
     content:"";
@@ -81,7 +82,7 @@ export default {
     line-height: 2.08333333rem;
     text-align: center;
     color: #777;
-    font-size: 1.16666667rem;
+    font-size: 13px;
     border-right: 2px solid #ccc;
 }
 .navBox ul li.active a {
@@ -96,4 +97,5 @@ export default {
     height: .33333333rem;
     background: #f6b501;
 }
+
 </style>

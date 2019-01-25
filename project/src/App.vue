@@ -1,6 +1,6 @@
 <template>
-<div>
-  <mt-header fixed title="欢乐龙城">
+<div style="max-width:786px;margin:0 auto;">
+  <mt-header fixed title="">
      <div slot="left">
        <img src="./assets/img/LOGO.png" alt="longcheng" style="width:100%;">
      </div>
@@ -19,7 +19,7 @@
         </mt-tab-item>
       <mt-tab-item id="puke">
         <div  @click.prevent="changeHash" >
-          棋牌
+          扑克
         </div>
       </mt-tab-item>
     </mt-navbar>
