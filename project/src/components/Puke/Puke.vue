@@ -25,7 +25,7 @@ export default {
     return {
       apps:[
          
-          {imgSrc:require('../../assets/img/qp.jpg'),imgAlt:'欢乐龙城棋牌',title:'欢乐龙城棋牌',desc:'东北最流行的扑克打法，老少皆宜，游戏紧张刺激，考验玩家的智慧与勇气的游戏。',downloadUrl:'http://puke.jilinshenlong.com/down/down.html'},
+          {imgSrc:require('../../assets/img/qp.jpg'),imgAlt:'欢乐龙城棋牌',title:'欢乐龙城棋牌',desc:'东北最流行的扑克打法，老少皆宜，游戏紧张刺激，考验玩家的智慧与勇气的游戏。',downloadUrl:'http://puke-res.jilinshenlong.com/down/down.html'},
       ]
     }
   }
