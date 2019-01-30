@@ -1,9 +1,13 @@
+
+/* *{
+    box-sizing: border-box;
+} */
 body{
     padding: 0;
     margin: 0;
-    font-size:16px;
+    /* font-size:16px; */
 }
-p,h1,h2,h3,h4,h5,h6{
+p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol{
     padding:0;
     margin:0;
 }
@@ -11,7 +15,7 @@ a{
     text-decoration: none;
 }
 .content_box{
-    margin-top: 52px;
+    padding-top: 52px;
     position: relative;
     /* padding-top:180px; */
     /* background: url(../img/bd.jpg) no-repeat 0 -12px; */
@@ -28,12 +32,33 @@ a{
 .wrapper{
     display: grid;
     padding: 0.4rem 0.8rem;
-    grid-template-columns: 17% 62% 11%;
+    grid-template-columns: 17% 58% 25%;
     border-bottom: 1px solid #e7e7e7;
+    box-sizing: border-box;
     /* grid-template-rows: 50px; */
 }
+.service_item{
+    font-size:12px;
+    width:100%;
+    background: #323234;
+}
+.service_item td{
+    /* width:50%; */
+    padding:10px 6px;
+    color: #ccc;
+    border-top: 1px solid #505152;
+    border-bottom: 1px solid #18181a;
+    height:80px;
+    box-sizing: border-box;
+}
+.text_right{
+    text-align:right;
+}
+.ver_middle{
+    vertical-align: middle;
+}
 .desc{
-    margin-left:4%;
+    margin:0 4%;
     line-height: 1.5;
 }
 .desc>p{
@@ -80,12 +105,12 @@ div.mint-navbar .mint-tab-item{
 .mint-tab-item-label>div{
     padding:17px 0;
 }
-.mint-tab-item{
+.wrap_navbar .mint-tab-item{
     color: #aaa;
     font-size: 1.5rem;
     background: #272727;
 }
-.mint-tab-item.is-selected{
+.wrap_navbar .mint-tab-item.is-selected{
     color: #555 !important;
     margin-bottom:0 !important;
     border-bottom:none !important;
@@ -94,7 +119,7 @@ div.mint-navbar .mint-tab-item{
 .header_menu{
     position: fixed;
     top:51px;
-    right:0;
+    right:15px;
     z-index:1000;
     background:#fff;
     box-shadow:0 0 5px #aaa ;
@@ -105,7 +130,7 @@ div.mint-navbar .mint-tab-item{
 }
 .header_menu>li{
     text-align: center;
-    padding: .625rem 1.1rem;
+    padding: .625rem 0.8rem;
     border-top: 1px solid #d7d7d7;
 }
 .header_menu>li>a{
@@ -119,9 +144,9 @@ div.mint-navbar .mint-tab-item{
     font-size: 12px;
 }
 .footer{
-    margin-top:30px;
+    /* margin-top:30px; */
     width: 100%;
-    background: #333;
+    background: #1f2326;
     color: #999;
     padding: 14px 0 0;
     text-align: center;
@@ -140,18 +165,105 @@ div.mint-navbar .mint-tab-item{
     padding:10px 0;
 }
 
-.about_box{
+.about_box,.parents_box{
     padding:10px 6px;
+    font-size:14px;
+    line-height:1.6;
 }
-.about_box>h3{
+.about_box>h3,.parents_box>h3{
     text-align: center;
     padding-bottom:10px;
+    border-bottom: 1px dashed #ddd;
 }
 .margin_top_20{
     margin-top:20px;
 }
-.about_top{
+.text_indent_2{
     text-indent: 2rem;
-    line-height:1.6;
-
 }
+.employContent {
+    background: #323234;
+}
+.employContent .itemEmploy {
+    padding: .83333333rem 0;
+    color: #ccc;
+    font-size: .83333333rem;
+    border-top: 1px solid #505152;
+    border-bottom: 1px solid #18181a;
+}
+.employContent h4 {
+    padding: .625rem 1.25rem;
+    color: #ff8639;
+    font-size: 1rem;
+}
+.employContent h5 {
+    padding: .41666667rem 0;
+    color: #ff8639;
+    font-size: .91666667rem
+}
+.itemEmploy >div {
+    padding: 0 1.25rem;
+}
+.download_btn{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 92%;
+    height: 32px;
+    line-height: 32px;
+    padding-left: .625rem;
+    margin-top: 1.16666667rem;
+    color: #fff;
+    font-size: 12px;
+    background: #19803e url(../img/downloadIcon2.png) no-repeat right center;
+    background-size: 1.25rem;
+    -webkit-border-radius: .33333333rem;
+    -moz-border-radius: .33333333rem;
+    -ms-border-radius: .33333333rem;
+    border-radius: .33333333rem;
+}
+
+
+.navBox{
+    margin-bottom:12px;
+    font-size:12px;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.navBox ul li {
+    position:relative;
+    float: left;
+    width: 25%;
+    text-align:center;
+    padding:0 0 6px 0;
+    border-bottom: 1px solid #ccc;
+}
+.navBox ul li.active a {
+    color: #f6b501;
+}
+.navBox ul a {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: 2.08333333rem;
+    line-height: 2.08333333rem;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    border-right: 2px solid #ccc;
+}
+.navBox ul li.active a {
+    color: #f6b501;
+}
+.navBox ul li.active:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .33333333rem;
+    background: #f6b501;
+}
+

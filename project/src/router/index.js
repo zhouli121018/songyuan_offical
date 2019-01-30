@@ -5,6 +5,9 @@ import HelloWorld from '@/components/HelloWorld'
 import Home from '@/components/Home/Home'
 import Puke from '@/components/Puke/Puke'
 import About from '@/components/About/About'
+import Parents from '@/components/Parents/Parents'
+import Service from '@/components/Service/Service'
+import Job from '@/components/Job/Job'
 
 Vue.use(Router)
 
@@ -28,6 +31,21 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: About,
+    },
+    {
+      path: '/parents',
+      name: 'parents',
+      component: Parents,
+    },
+    {
+      path: '/service',
+      name: 'service',
+      component: Service,
+    },
+    {
+      path: '/job',
+      name: 'job',
+      component: Job,
     },
 
 

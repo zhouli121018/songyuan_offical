@@ -1,5 +1,18 @@
 <template>
   <div>
+      <mt-navbar v-model="selected" class="wrap_navbar">
+        <mt-tab-item id="home">
+            <div   @click.prevent="changeHash">
+            麻将
+            </div>
+            </mt-tab-item>
+        <mt-tab-item id="puke">
+            <div  @click.prevent="changeHash" >
+            扑克
+            </div>
+        </mt-tab-item>
+    </mt-navbar>
+    
         <div class="navBox">
             <ul class="clear">
                 <li v-for="c in citys" :class="{active:c.id==active_city}" :key="c.id" ><a href="#" @click.prevent="changeCity(c.id)"> {{c.name}}</a> </li>
@@ -17,8 +30,8 @@
                 </p>
             </div>
             <div>
-                <a :href="a.downloadUrl" target="_blank" style="display:inline-block;">
-                    <i class="iconfont icon-xiazai1 download-icon"></i>
+                <a :href="a.downloadUrl" target="_blank" style="display:inline-block;" class="download_btn">
+                    点击下载
                 </a>
             </div>
         </div>
@@ -40,61 +53,27 @@ export default {
           {id:3,name:'山东'},
           {id:4,name:'内蒙'},
           {id:5,name:'河北'},
-      ]
+      ],
+      selected:'home'
     }
   },
   methods:{
       changeCity(id){
           this.active_city = id;
-      }
+      },
+      changeHash(){
+      this.$nextTick(function(){
+        this.$router.push({
+          name: this.selected
+        })
+      })
+    },
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.navBox{
-    margin-bottom:12px;
-    font-size:12px;
-}
-.clear:after{
-    content:"";
-    display:block;
-    clear:both;
-}
-.navBox ul li {
-    position:relative;
-    float: left;
-    width: 25%;
-    text-align:center;
-    padding:0 0 6px 0;
-    border-bottom: 1px solid #ccc;
-}
-.navBox ul li.active a {
-    color: #f6b501;
-}
-.navBox ul a {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 100%;
-    height: 2.08333333rem;
-    line-height: 2.08333333rem;
-    text-align: center;
-    color: #777;
-    font-size: 13px;
-    border-right: 2px solid #ccc;
-}
-.navBox ul li.active a {
-    color: #f6b501;
-}
-.navBox ul li.active:before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: .33333333rem;
-    background: #f6b501;
-}
+
 
 </style>
