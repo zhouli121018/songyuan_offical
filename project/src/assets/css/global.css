@@ -93,7 +93,7 @@ ul,li{
     margin:0;
 }
 header.mint-header{
-    max-width: 786px;
+    /* max-width: 786px; */
     margin: 0 auto;
     height: 50px;
     background-color:#fff;
@@ -205,6 +205,7 @@ div.mint-navbar .mint-tab-item{
     padding: 0 1.25rem;
 }
 .download_btn{
+    max-width: 90px;
     box-sizing: border-box;
     display: inline-block;
     width: 92%;
