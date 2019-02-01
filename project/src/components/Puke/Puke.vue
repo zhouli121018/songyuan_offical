@@ -34,6 +34,12 @@
                 </a>
             </div>
         </div>
+        <div class="notice_box">
+            <h3><i class="iconfont icon-more" style="color:#F6852D"></i> 资讯中心</h3>
+            <ul class="eventList">
+                <li v-for="(g,k) in gamedata" :key="k"><router-link :title="g.title" :to="{name:g.link}">{{g.title}}</router-link></li>
+            </ul>
+        </div>
   </div>
 </template>
 
@@ -56,6 +62,12 @@ export default {
         //   {id:5,name:'河北'},
       ],
       selected:'puke',
+      gamedata:[
+          {title:'游戏介绍',link:'gamedata1',},
+          {title:'麻将文化',link:'gamedata2'},
+          {title:'打麻将有益身心健康',link:'gamedata3'},
+          {title:'打麻将要有精湛的技术',link:'gamedata4'},
+      ]
     }
   },
   methods:{

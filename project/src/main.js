@@ -8,6 +8,14 @@ import 'mint-ui/lib/style.css'
 import './assets/css/global.css'
 import './assets/iconfont/iconfont.css'
 
+import MyUl from '@/components/Common/MyUl'
+import MyLi from '@/components/Common/MyLi'
+import MyTitle from '@/components/Common/Title'
+
+Vue.component(MyUl.name,MyUl)
+Vue.component(MyLi.name,MyLi)
+Vue.component(MyTitle.name,MyTitle)
+
 import Axios from 'axios'
 
 // Axios.defaults.baseURL = ''

@@ -13,14 +13,13 @@
      </div>
      
      <mt-button  slot="right" @click="show_menu=!show_menu" ref="right_btn">
-       <i class="iconfont icon-more_" style="color:#333;font-size:26px;"></i>
+       <i class="iconfont icon-moreclass" style="color:#333;font-size:26px;"></i>
        
      </mt-button>
      
   </mt-header>
   
   <div class="content_box">
-    
     <mt-swipe :auto="4000" style="overflow:hidden;" :style="{height:banner_height+'px'}" ref="banner_box">
       <mt-swipe-item v-for="(b,k) in banners" :key="k">
         <img :src="b.src" :alt="k" >

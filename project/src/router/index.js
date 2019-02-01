@@ -8,6 +8,10 @@ import About from '@/components/About/About'
 import Parents from '@/components/Parents/Parents'
 import Service from '@/components/Service/Service'
 import Job from '@/components/Job/Job'
+import Gamedata1 from '@/components/Information/Gamedata1'
+import Gamedata2 from '@/components/Information/Gamedata2'
+import Gamedata3 from '@/components/Information/Gamedata3'
+import Gamedata4 from '@/components/Information/Gamedata4'
 
 Vue.use(Router)
 
@@ -46,6 +50,26 @@ export default new Router({
       path: '/job',
       name: 'job',
       component: Job,
+    },
+    {
+      path: '/gamedata1',
+      name: 'gamedata1',
+      component: Gamedata1,
+    },
+    {
+      path: '/gamedata2',
+      name: 'gamedata2',
+      component: Gamedata2,
+    },
+    {
+      path: '/gamedata3',
+      name: 'gamedata3',
+      component: Gamedata3,
+    },
+    {
+      path: '/gamedata4',
+      name: 'gamedata4',
+      component: Gamedata4,
     },
 
 
