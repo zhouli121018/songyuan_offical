@@ -8,12 +8,12 @@
     </li>
   </ul>
   <mt-header fixed title="">
-     <div slot="left" @click="jump({link:'home'})">
-       <img src="./assets/img/LOGO.png" alt="longcheng" style="width:100%;">
+     <div slot="left" @click="jump({link:'home'})" style="padding-top:4px;">
+       <img src="./assets/img/LOGO.png" alt="longcheng" style="height:46px;">
      </div>
      
      <mt-button  slot="right" @click="show_menu=!show_menu" ref="right_btn">
-       <i class="iconfont icon-more_" style="color:#333;"></i>
+       <i class="iconfont icon-more_" style="color:#333;font-size:26px;"></i>
        
      </mt-button>
      
@@ -31,7 +31,7 @@
   </div>
   <div class="footer">
     <div class="bottom_menu_box">
-      <span v-for="(r,k) in routsList" :key="k"> 
+      <span v-if="r.link!='home'" v-for="(r,k) in routsList" :key="k"> 
         <a :title="r.title" :href="r.link" @click.prevent="jump(r)">{{r.title}}</a> | 
       </span>
     </div>
@@ -42,7 +42,10 @@
       </p>
       <a href="http://www.miitbeian.gov.cn" target="_blank">吉ICP备18000167号-1 吉网文（2018）1597-008号</a>
       <p>
-				Copyright ©2017-2018吉林省神龙网络科技有限公司 版权所有
+				CopyRight ©2017-2018吉林省神龙网络科技有限公司 版权所有
+			</p>
+      <p>
+				<img src="./assets/img/beian.png" alt="beian" style="vertical-align: middle;"> 公安备案号：22072102000119
 			</p>
     </div>
     <div>
@@ -50,7 +53,9 @@
       <p>抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防上当受骗， </p>
       <p>适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活。 </p>
       <p class="img_box_bottom">
-        <img src="./assets/img/rz.png" alt="行业认证" style="width:30%">
+        <!-- <img src="./assets/img/rz.png" alt="行业认证" style="width:30%"> -->
+        <img src="./assets/img/wlwh.png" alt="网络文化" style="height:50px">
+        <img src="./assets/img/hyrz.png" alt="行业认证" style="height:50px">
       </p>
     </div>
   </div>
@@ -83,6 +88,7 @@ export default {
       show_menu:false,
       routsList:[
         // {title:'下载中心',link:'home'},
+        {title:'下载首页',link:'home'},
         {title:'客服中心',link:'service'},
         {title:'家长监护',link:'parents'},
         {title:'诚聘英才',link:'job'},

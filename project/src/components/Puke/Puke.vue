@@ -1,10 +1,6 @@
 <template>
   <div>
-        <!-- <div class="navBox">
-            <ul class="clear">
-                <li v-for="c in citys" :class="{active:c.id==active_city}" :key="c.id" ><a href="#" @click.prevent="changeCity(c.id)"> {{c.name}}</a> </li>
-            </ul>
-        </div> -->
+        
         <mt-navbar v-model="selected" class="wrap_navbar">
             <mt-tab-item id="home">
                 <div   @click.prevent="changeHash">
@@ -17,6 +13,11 @@
                 </div>
             </mt-tab-item>
         </mt-navbar>
+        <!-- <div class="navBox">
+            <ul class="clear">
+                <li v-for="c in citys" :class="{active:c.id==active_city}" :key="c.id" ><a href="#" @click.prevent="changeCity(c.id)"> {{c.name}}</a> </li>
+            </ul>
+        </div> -->
         <div class="wrapper" v-for="(a,k) in apps" :key="k">
             <div>
               <img :src="a.imgSrc" :alt="a.imgAlt" style="max-width:100%">

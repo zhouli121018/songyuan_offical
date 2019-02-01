@@ -1,17 +1,17 @@
 <template>
-  <div>
-      <mt-navbar v-model="selected" class="wrap_navbar">
-        <mt-tab-item id="home">
-            <div   @click.prevent="changeHash">
-            麻将
-            </div>
+    <div>
+        <mt-navbar v-model="selected" class="wrap_navbar">
+            <mt-tab-item id="home">
+                <div   @click.prevent="changeHash">
+                麻将
+                </div>
+                </mt-tab-item>
+            <mt-tab-item id="puke">
+                <div  @click.prevent="changeHash" >
+                扑克
+                </div>
             </mt-tab-item>
-        <mt-tab-item id="puke">
-            <div  @click.prevent="changeHash" >
-            扑克
-            </div>
-        </mt-tab-item>
-    </mt-navbar>
+        </mt-navbar>
     
         <div class="navBox">
             <ul class="clear">
@@ -35,7 +35,7 @@
                 </a>
             </div>
         </div>
-  </div>
+    </div>
 </template>
 
 <script>

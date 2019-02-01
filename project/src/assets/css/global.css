@@ -71,7 +71,7 @@ a{
     font-size:1.2rem;
 }
 .mint-navbar{
-    margin-bottom:1rem;
+    /* margin-bottom:1rem; */
 }
 .mint-swipe-item>img{
     width:100%;
@@ -105,12 +105,13 @@ div.mint-navbar .mint-tab-item{
 .mint-tab-item-label>div{
     padding:17px 0;
 }
-.wrap_navbar .mint-tab-item{
-    color: #aaa;
+.mint-tab-item{
+    color: #555;
     font-size: 1.5rem;
     background: #272727;
+    background: #bbb;
 }
-.wrap_navbar .mint-tab-item.is-selected{
+.mint-tab-item.is-selected{
     color: #555 !important;
     margin-bottom:0 !important;
     border-bottom:none !important;
@@ -119,7 +120,7 @@ div.mint-navbar .mint-tab-item{
 .header_menu{
     position: fixed;
     top:51px;
-    right:15px;
+    right:10px;
     z-index:1000;
     background:#fff;
     box-shadow:0 0 5px #aaa ;
@@ -130,7 +131,7 @@ div.mint-navbar .mint-tab-item{
 }
 .header_menu>li{
     text-align: center;
-    padding: .625rem 0.8rem;
+    padding: .225rem 0.5rem;
     border-top: 1px solid #d7d7d7;
 }
 .header_menu>li>a{
