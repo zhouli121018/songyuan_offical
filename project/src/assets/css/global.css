@@ -269,8 +269,13 @@ div.mint-navbar .mint-tab-item{
     height: .33333333rem;
     background: #f6b501;
 }
+.notice_box{
+    background:#ddd;
+    padding-top:8px;
+}
 .notice_box>h3{
     color:#5F5F5F;
+    background:#fff;
     font-size:16px;
     padding:0.833rem;
 }
