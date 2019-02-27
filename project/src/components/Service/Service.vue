@@ -15,10 +15,17 @@
     <div>
       <table class="service_item">
         <tr>
-          <td>咨询：【添加微信】</td>
+          <td>松原地区咨询：微信号qq9613620</td>
           <td>
             <div class="text_right">
-              <p>qq9613620（微信号）</p>
+              <p>电话号13179059876</p>
+            </div>
+          </td>
+        </tr>
+                  <td>长春地区咨询：微信号qq330306543</td>
+          <td>
+            <div class="text_right">
+              <p>电话号18943818123</p>
             </div>
           </td>
         </tr>

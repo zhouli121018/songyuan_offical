@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="notice_box">
-            <h3><i class="iconfont icon-more" style="color:#F6852D"></i> 资讯中心</h3>
+            <h3><i class="iconfont icon-more" style="color:#F6852D"></i> 综合资讯</h3>
             <ul class="eventList">
                 <li v-for="(g,k) in gamedata" :key="k"><router-link :title="g.title" :to="{name:g.link}">{{g.title}}</router-link></li>
             </ul>
@@ -56,7 +56,7 @@ export default {
           {id:0,name:'吉林'},
           {id:1,name:'辽宁'},
           {id:2,name:'黑龙江'},
-          {id:3,name:'山东'},
+          {id:3,name:'北京'},
           {id:4,name:'内蒙'},
           {id:5,name:'河北'},
       ],

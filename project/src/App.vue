@@ -47,16 +47,6 @@
 				<img src="./assets/img/beian.png" alt="beian" style="vertical-align: middle;"> 公安备案号：22072102000119
 			</p>
     </div>
-    <div>
-      <p>健康游戏公告</p>
-      <p>抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防上当受骗， </p>
-      <p>适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活。 </p>
-      <p class="img_box_bottom">
-        <!-- <img src="./assets/img/rz.png" alt="行业认证" style="width:30%"> -->
-        <img src="./assets/img/wlwh.png" alt="网络文化" style="height:50px">
-        <img src="./assets/img/hyrz.png" alt="行业认证" style="height:50px">
-      </p>
-    </div>
   </div>
   
   <!-- <mt-tabbar v-model="selected">
@@ -87,7 +77,7 @@ export default {
       show_menu:false,
       routsList:[
         // {title:'下载中心',link:'home'},
-        {title:'下载首页',link:'home'},
+        {title:'首页',link:'home'},
         {title:'客服中心',link:'service'},
         {title:'家长监护',link:'parents'},
         {title:'诚聘英才',link:'job'},
