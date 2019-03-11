@@ -32,6 +32,16 @@
           </td>
         </tr>
 
+        <tr>
+          <td>长春地区咨询：微信号qq330306543</td>
+          <td>
+            <div class="text_right">
+              <p>电话号18943818123</p>
+            </div>
+          </td>
+        </tr>
+        
+
       </table>
     </div>
   </div>

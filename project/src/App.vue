@@ -71,7 +71,7 @@ export default {
         {src:require('./assets/img/1.jpg')},
         {src:require('./assets/img/2.jpg')},
         {src:require('./assets/img/3.jpg')},
-        {src:require('./assets/img/4.jpg')},
+        // {src:require('./assets/img/4.jpg')},
       ],
       banner_height: 180,
       show_menu:false,
