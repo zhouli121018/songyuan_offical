@@ -1,5 +1,5 @@
 <template>
-<div style="width:100%;margin:0 auto;" @click="hide_fixed_menubar">
+<div style="width:100%;margin:0 auto;" @click="hide_fixed_menubar" ref="box_content">
   <ul class="header_menu" v-show="show_menu" ref="fixed_menubar">
     <li v-for="(l,k) in routsList" :key="k">
       <a :href="l.link" @click.prevent="jump(l)">
@@ -25,10 +25,10 @@
         <img :src="b.src" :alt="k" >
       </mt-swipe-item>
     </mt-swipe>
-    <router-view></router-view>
+    <router-view style="overflow:auto;" :style="{height:content_height+'px'}"></router-view>
 
   </div>
-  <div class="footer">
+  <div class="footer" ref="footer_height">
     <div class="bottom_menu_box">
       <span v-if="r.link!='home'" v-for="(r,k) in routsList" :key="k"> 
         <a :title="r.title" :href="r.link" @click.prevent="jump(r)">{{r.title}}</a> | 
@@ -66,6 +66,7 @@ export default {
   name: 'App',
   data () {
     return {
+      content_height:300,
       selected:'',
       banners:[
         {src:require('./assets/img/1.jpg')},
@@ -95,6 +96,11 @@ export default {
       console.log(w)
       this.banner_height = w*310/640;
       console.log(this.banner_height)
+
+      let body_height = document.documentElement.clientHeight;
+      let foot_h = this.$refs.footer_height.offsetHeight
+      this.content_height = body_height - this.banner_height - 60 - foot_h
+      console.log(this.content_height);
     })
   },
   methods:{
