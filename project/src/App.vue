@@ -36,10 +36,10 @@
     </div>
     <p class="footer_tips" v-if="false">健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防上当受骗 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
     <div>
-      <p>
+      <!-- <p>
         <a href="http://jb.ccm.gov.cn/" target="_blank">全国文化市场统一举报电话：12318</a>
-      </p>
-      <a href="http://www.miitbeian.gov.cn" target="_blank">吉ICP备18000167号-1 吉网文（2018）1597-008号</a>
+      </p> -->
+      <span>吉ICP备18000167号-1 吉网文（2018）1597-008号</span>
       <p>
 				CopyRight ©2017-2018吉林省神龙网络科技有限公司 版权所有
 			</p>
