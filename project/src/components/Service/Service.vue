@@ -3,12 +3,12 @@
     <mt-navbar v-model="selected">
       <mt-tab-item id="majiang">
         <div  >
-          麻将客服
+          麻将代理
         </div>
         </mt-tab-item>
       <mt-tab-item id="puke">
         <div  >
-          扑克客服
+          扑克代理
         </div>
       </mt-tab-item>
     </mt-navbar>
