@@ -9,7 +9,7 @@
   </ul>
   <mt-header fixed title="">
      <div slot="left" @click="jump({link:'home'})" style="padding-top:4px;">
-       <img src="./assets/img/LOGO.png" alt="longcheng" style="height:46px;">
+       <img src="./assets/img/LOGO.png" alt="longcheng" style="height:42px;">
      </div>
      
      <mt-button  slot="right" @click="show_menu=!show_menu" ref="right_btn">
